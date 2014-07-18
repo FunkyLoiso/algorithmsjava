@@ -56,5 +56,5 @@ Edge *DirectedWeightedGraph::is_connected(int from, int to) const {
             return *i;
         }
     }
-    return nullptr;
+    return NULL;
 }
