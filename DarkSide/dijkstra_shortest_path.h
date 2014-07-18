@@ -18,8 +18,8 @@ public:
     const DirectedWeightedGraph &graph() const { return _graph; }
 
 private:
-    const int _source_vertex;
     const DirectedWeightedGraph &_graph;
+    const int _source_vertex;
     std::vector<int> _distances;
     std::vector<int> _parents;
 };

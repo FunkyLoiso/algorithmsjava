@@ -1,4 +1,5 @@
 #include "directed_weighted_graph.h"
+#include <cstdio>
 
 void DirectedWeightedGraph::connect(int from, int to, int weight) {
     if (from == to || from < 0 || to < 0 || from >= this->vertices_count() || to >= this->vertices_count()) {
@@ -55,5 +56,5 @@ Edge *DirectedWeightedGraph::is_connected(int from, int to) const {
             return *i;
         }
     }
-    return NULL;
+    return nullptr;
 }
